@@ -1,0 +1,9 @@
+path: D:/SMARTCAM/python_projects/model_perfromance_eval_26_02_2026/model_perfromance_eval/datasets/coco
+train: images/calib
+val: val2017-pose.txt
+
+kpt_shape: [17, 3]
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
+
+names:
+  0: person

@@ -1,0 +1,9 @@
+
+path: datasets/coco
+train: images/calib
+val: images/calib
+
+kpt_shape: [17, 3]
+
+names:
+  0: person

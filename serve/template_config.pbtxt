@@ -1,0 +1,26 @@
+name: "<model_dir_name>"
+platform: "tensorrt_plan"
+max_batch_size: <0 if batch is already in dims; else N>
+
+input [
+  {
+    name: "<input_binding_name>"
+    data_type: TYPE_FP32   # or TYPE_FP16 if binding says fp16
+    dims: [ <shape from trtexec, including leading batch if max_batch_size is 0> ]
+  }
+]
+
+output [
+  {
+    name: "<output_binding_name>"
+    data_type: TYPE_FP32
+    dims: [ <shape from trtexec> ]
+  }
+]
+
+instance_group [
+  {
+    count: 1
+    kind: KIND_GPU
+  }
+]

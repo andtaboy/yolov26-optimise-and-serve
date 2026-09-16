@@ -1,0 +1,2 @@
+ultralytics
+tensorrt>7.0.0,!=10.1.0

@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.idea/
+.vscode/
+.venv/
+venv/
+.env
+.env.*
+*.egg-info/
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Local teaching notes (not published)
+docs/
+
+# Weights, engines, ONNX, TensorRT plans
+*.pt
+*.pth
+*.onnx
+*.engine
+*.plan
+*.cache
+
+# Video / media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Datasets and Ultralytics val dumps
+optimize/datasets/
+optimize/runs/
+
+# Client run artifacts
+serve/outputs/*
+!serve/outputs/.gitkeep
